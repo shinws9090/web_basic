@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<head>
+<meta charset="UTF-8">
+<title>목록 테그 (ul/ol)</title>
+<style>
+#phone {
+	list-style: square;
+}
+
+#phone2 {
+	list-style: circle;
+}
+
+#firstOl {
+	list-style: none;
+}
+
+#firstOl2 {
+	list-style: lower-roman;
+}
+</style>
+</head>
+<body>
+	<h1>관광 안내 전화</h1>
+	<p>한국관광공사에서는...실시하고있습니다</p>
+	<p>13030dpsms....이용가능합니다</p>
+	<ul id="phone">
+		<li>일반전화
+			<ol type="a">
+				<li>0102002300</li>
+				<li>0102002300</li>
+			</ol>
+		</li>
+		<li>휴대전화
+			<ol type="a" start="3">
+				<li>0102002300</li>
+				<li>0102002300</li>
+				<li>0102002300</li>
+			</ol>
+		</li>
+	</ul>
+
+	<ul id="phone2">
+		<li>일반전화
+			<ol type="a" id="firstOl">
+				<li>01000</li>
+				<li>0200300</li>
+			</ol>
+		</li>
+		<li>휴대전화
+			<ol type="a" start="3" id="firstOl2">
+				<li>0303000203</li>
+				<li>0102002300</li>
+				<li>0102002300</li>
+			</ol>
+		</li>
+	</ul>
+
+</body>
+</html>
