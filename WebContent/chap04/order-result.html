@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>주문서 작성하기</title>
+<style type="text/css">
+ul{
+list-style-type: none;
+}
+label,legend{
+float: laft;
+width: 100px;
+font-weight: bold;
+}
+body{
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+</style>
+
+</head>
+<body>
+	<h1>상품 주문서</h1>
+	<form action="RegisterServlet3">
+	<fieldset>
+		<legend>개인 정보</legend>
+		<ul>
+			<li><label>이름</label> <input type="text" name="이름"autofocus
+				placeholder="여백없이 입력" required> <br>
+			<li><label>연락처</label> <input type="tel" name="연락처"
+				placeholder="연락 가능한 번호" required><br>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>배송지 정보   </legend>
+		<ul>
+			<li><label>주소</label> <input type="text" name="주소" required> <br>
+			<li><label>전화번호</label> <input type="tel" name="전화번호" required> <br>
+			<li><label>메모</label> <br>
+			<textarea cols="50" rows="4" name="메모"></textarea>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>주문 정보</legend>
+		<ul>
+			<li><label><input type="checkbox" name="주문 정보"value="과테말라">과테말라 안티구아(100g)</label> 
+			<input type="number" name="주문 정보" min="0" max="5" value="0">개<br>
+			
+			<li><label><input type="checkbox" name="주문 정보" value="인도네시아">인도네시아 만델링(100g)</label> 
+			<input type="number" name="주문 정보" min="0" max="5" value="0">개<br>
+			
+			<li><label><input type="checkbox" name="주문 정보" value="탐나는도다">탐나는도다(블랜딩)(100g)</label> 
+			<input type="number" name="주문 정보" min="0" max="5" value="0">개<br>
+		</ul>
+	</fieldset>
+	<input type="submit" value="주문하기">
+	<input type="reset" value="다시하기">
+	</form>
+
+</body>
+</html>

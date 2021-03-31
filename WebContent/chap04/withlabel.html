@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="RegisterServlet" method= "get">
+<h3>수강 분야(다수 선택 가능)</h3>
+<ul>
+<li><input type="checkbox" name="sub" value="grm">문법</li>
+<li><input type="checkbox" name="sub" value="wr">작문</li>
+<li><input type="checkbox" name="sub" value="rd">독해</li>
+</ul>
+<fieldset>
+<legend>수강과목(1과목만 선택 가능)</legend>
+<ul>
+<li><label><input type = "radio" name ="subject" value="eng">영어회화</label></li>
+<li><label><input type = "radio" name ="subject" value="ch">중국어회화</label></li>
+<li><label><input type = "radio" name ="subject" value="jp">일어회화</label></li>
+</ul>
+</fieldset>
+<input type="submit" value="전송">
+</form>
+
+</body>
+</html>

@@ -1,26 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>web_basic</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <servlet>
-  	<servlet-name>MemRegServlet
-  	</servlet-name>
-  	<servlet-class>web_baisc.jsp_ch3.MemRegServlet
-  	</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>
-  	MemRegServlet
-  	</servlet-name>
-  	<url-pattern>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>web_basic</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page> <!-- 예외처리 -->
+	<error-code>500</error-code>
+	<location>/jsp_09/errorPage/500.jsp</location>
+	</error-page>
+	<error-page>
+	<error-code>404</error-code>
+	<location>/jsp_09/errorPage/404.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+	<location>/jsp_09/errorPage/null.jsp</location>
+	</error-page>
+	
+	<servlet>
+		<servlet-name>MemRegServlet</servlet-name>
+		<servlet-class>web_baisc.jsp_ch3.MemRegServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemRegServlet</servlet-name>
+		<url-pattern>
   	/jsp_03/memReg1
   	</url-pattern>
-  </servlet-mapping>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>configTest</servlet-name>
+		<jsp-file>/jsp_05/configTest1.jsp</jsp-file>
+		<init-param>
+			<param-name>fileDir</param-name>
+			<param-value>C:\test</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>configTest</servlet-name>
+		<url-pattern>/jsp_05/configTest1.jsp</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<description>로깅여부</description>
+		<param-name>logEnabled</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<description>디버깅 레벨</description>
+		<param-name>debugLevel</param-name>
+		<param-value>5</param-value>
+	</context-param>
+	
 </web-app>

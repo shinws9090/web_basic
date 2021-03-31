@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Fuck" method="get">
+		<fieldset>
+			<label>아이디<input type="text" name="id"></label><br>
+			<label>비밀번호<input type="password" name="passwd"></label><br>
+			<label>비밀번호확인<input type="password" name="passwd2"></label><br>
+		</fieldset>
+		<fieldset>
+			<label>이름<input type="text" name="name"></label><br>
+			<label>email<input type="email" name="email"></label><br>
+			<label>연락처<input type="tel" name="tel"></label><br>
+			<label>블로그<input type="url" name="url"></label><br>
+		</fieldset>
+		<fieldset>
+			<legend>등록정보</legend>
+			<label>참여인원 <small>(최대 10명)</small></label>
+			<input type="number" name="member" value="1" min="0" max="10" step="1"><br>
+			<label>지원물품 <small>(1인당 5개)</small></label>
+			<input type="number" name="stuffs" value="1" min="0" max="50" step="5"><br>
+			<label>희망단계 <small>(하,중,상)</small></label>
+			<input type="range" name="satis" value="1" min="1" max="3"><br>
+		</fieldset>
+		<fieldset>
+			<legend>신청과목</legend>
+			이달에 신청할 과목을 선택하시오 (1과목만 선택가능)<br>
+			<label><input type="radio" name="subject" value="speaking">회화</label>
+			<label><input type="radio" name="subject" value="grammar">문법</label>
+			<label><input type="radio" name="subject" value="writing">작문</label>
+		</fieldset>
+		<fieldset>
+			<legend>메일링</legend>
+			메일로 받고싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)<br>
+			<label><input type="checkbox" name="mailing" value="news">해외단신</label>
+			<label><input type="checkbox" name="mailing" value="dialog">5분회화</label>
+			<label><input type="checkbox" name="mailing" value="pops">모닝팝스</label>
+		</fieldset>
+		<fieldset>
+			<legend>조회기간</legend>
+			<label><input type ="date" name="start"></label>
+			<b>부터 </b>
+ 			<label><input type ="date" name="end"></label>
+ 			<b>까지</b>
+		</fieldset>
+		<fieldset>
+			<legend>대관시간을 선택하세요(오늘)</legend>
+			<b>시작시간</b>
+			<label><input type ="time" name="timeStart"></label>
+ 			<b>종료시간</b>
+ 			<label><input type ="time" name="timeEnd"></label>
+		</fieldset>
+		<fieldset>
+			<legend>대관시간을 선택하세요(다른날짜)</legend>
+			<b>시작시간</b>
+			<label><input type ="datetime-local" name="datetimeStart"></label>
+ 			<b>종료시간</b>
+ 			<label><input type ="datetime-local" name="datetimeEnd"></label>
+		</fieldset>
+		<input type="submit" value="가입하기">
+		<input type="reset" value="다시입력">
+	
+	</form>
+
+</body>
+</html>

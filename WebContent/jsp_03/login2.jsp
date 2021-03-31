@@ -22,7 +22,7 @@ h1 {
 	<h1>로그인</h1>
 	<section id="loginFromArea">
 	  	<!-- http://localhost:8080/web_basic/jsp_03/login?id=?&passwd=? -->
-		<form action="login" method="get">
+		<form action="login2" method="get">
 			<label id="id">아이디 : </label> 
 			<input type="text" name="id" id="id">
 			<br> 
