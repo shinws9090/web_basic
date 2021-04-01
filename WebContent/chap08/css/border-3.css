@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+h1{
+	padding-bottom: 5px;
+	border-bottom: 3px solid #ccc;
+}
+
+p{
+	padding: 10px;
+	border:3px dotted black;
+}

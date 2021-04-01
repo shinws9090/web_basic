@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div{
+	width: 300px;
+	height: 150px;
+	margin: 20px;
+	border: 2px solid black;
+	display: inline-block;
+	background: yellow;
+}
+
+.round1{
+	border-top-left-radius: 100px 50px;
+}
+.round2{
+	border-top-right-radius: 50% 30%;
+}
+.round3{
+	border-bottom-right-radius: 50px 50px;
+}

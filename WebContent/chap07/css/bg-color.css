@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+	background-color: #0094ff;
+}
+div{
+	/*배경설정*/
+	background-clip: border-box;
+	background-clip: padding-box;
+	background-clip: content-box;
+	width: 90%;
+	padding: 20px;
+	border: 10px dotted black;
+}
+p{
+	line-height: 30px;
+}

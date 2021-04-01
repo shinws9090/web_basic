@@ -1,4 +1,4 @@
-package web_basic.chap04;
+package web_basic.jsp_10;
 
 import java.io.IOException;
 import java.util.Enumeration;

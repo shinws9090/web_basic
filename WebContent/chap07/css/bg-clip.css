@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div {
+	display: inline-block;
+	width: 300px;
+	padding: 35px;
+	border: 5px dotted #222;
+	background: skyblue;
+	margin-bottom: 20px;
+}
+
+.bg1 {
+	background-clip: border-box;
+}
+
+.bg2 {
+	background-clip: padding-box;
+}
+
+.bg3 {
+	background-clip: content-box;
+}

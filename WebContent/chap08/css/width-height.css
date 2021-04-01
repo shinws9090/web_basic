@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.box1{
+	width: 400px;
+	height: 100px;
+	background-color: red;
+	
+}
+.box2{
+	width: 50%;
+	height: 100px;
+	background-color: blue;
+
+}
+div{
+	margin: 10px;
+}

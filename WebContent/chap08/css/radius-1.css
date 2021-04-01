@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div{
+	width: 400px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	
+}
+.round{
+	border: 1px solid red;
+	border-radius: 20px;
+}
+#bg{
+	background: url(../images/pic1.jpg) no-repeat;
+	background-size: cover;
+}
