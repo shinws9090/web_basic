@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding: 5px 30px;
+}
+
+li a {
+	font-size: 16px;
+	color: blue;
+	text-decoration: none;
+}
+
+a[target="_blank"]{
+	padding: 30px;
+	background: url("../images/newwindow.png") no-repeat center right;
+}

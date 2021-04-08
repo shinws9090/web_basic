@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#container {
+	width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.left-img {
+	float: left;
+	margin-right: 25px;
+}
+p{
+	line-height: 30px;
+}

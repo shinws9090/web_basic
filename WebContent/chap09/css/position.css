@@ -1,0 +1,137 @@
+@charset "UTF-8";
+div{
+	margin: 50px;
+}
+.box1{
+	float: left;
+	width: 100px;
+	background: #ffd800;
+	padding: 20px;
+	
+}
+.box2{
+	/* position: static; */
+	top:30px;
+	left:-50px;
+	float: left;
+	width: 300px;
+	background: #0080ff;
+	padding: 20px;
+	
+}
+.box3{
+	clear: both;
+	float: left;
+	width: 100px;
+	background: #ffd800;
+	padding: 20px;
+	
+}
+.box4{
+	position: relative;
+	top:30px;
+	left:-50px;
+	float: left;
+	width: 300px;
+	background: #0080ff;
+	padding: 20px;
+}
+
+#wrap{
+	clear: both;
+	float: left;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+}
+.box{
+	margin:0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #0080ff;
+}
+#box5{
+	top:0; left: 0;
+}
+#box6{
+	top:0; right: 0;
+}
+#box7{
+	bottom:0; left: 0;
+}
+#box8{
+	bottom:0; right: 0;
+}
+#box9{
+	top:100px; left: 100px;
+}
+
+#box10{
+	position: fixed;
+	top:30px;
+	right:30px;
+	width: 50px;
+	height:50px;
+	background: #0080ff;
+	padding: 20px;
+}
+#box11{
+	float: left;
+	visibility: hidden;
+	width: 50px;
+	height:50px;
+	background: #0080ff;
+	padding: 20px;
+}
+#box12{
+	float: left;
+	visibility: visible;
+	width: 50px;
+	height:50px;
+	background: #0080ff;
+	padding: 20px;
+}
+#box13{
+	float: left;
+	visibility: collapse;
+	width: 50px;
+	height:50px;
+	background: #0080ff;
+	padding: 20px;
+}
+
+
+#box14{
+	clear: both;
+	z-index:3;
+	float: left;
+	width: 50px;
+	height:50px;
+	background: #ffd800;
+	padding: 20px;
+}
+#box15{
+	z-index:2;
+	float: left;
+	position: relative;
+	top:40px;
+	left:-150px;
+	width: 50px;
+	height:50px;
+	background: #0000ff;
+	padding: 20px;
+}
+#box16{
+	z-index:1;
+	float: left;
+	position: relative;
+	top:30px;
+	left:-400px;
+	width: 50px;
+	height:50px;-
+	background: #ff0000;
+	padding: 20px;
+}
+

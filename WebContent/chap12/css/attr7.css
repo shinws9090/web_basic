@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+ul {
+	list-style: circle;
+}
+
+li {
+	padding: 5px 30px;
+}
+
+li a {
+	font-size: 16px;
+	color: blue;
+	text-decoration: none;
+}
+
+a[href *="w3"]{
+	background: blue;
+	color: white;
+}

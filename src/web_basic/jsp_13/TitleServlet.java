@@ -29,7 +29,7 @@ public class TitleServlet extends HttpServlet {
 		List<Title> list = service.showTitles();
 		
 		request.setAttribute("list",list);
-		request.getRequestDispatcher("Title.jsp?page=TitleSelect.jsp").forward(request, response);
+		request.getRequestDispatcher("TitleSelect.jsp").include(request, response);
 		/*
 		 * PrintWriter out = response.getWriter(); for(Title a :list) {
 		 * out.printf("%s - %s<br>",a.getTno(),a.getTname()); }

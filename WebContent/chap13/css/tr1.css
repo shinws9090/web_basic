@@ -1,0 +1,115 @@
+@charset "UTF-8";
+div{
+	display: inline-block;
+}
+.tr1 {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border: 1px solid black;
+}
+
+.tr1:hover {
+	transition-property: width, height;
+	transition-duration: 2s, 1s;
+	width: 200px;
+	height: 120px;
+}
+
+.tr2 {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: 1px solid black;
+	transition-property: background-color, transform, width, height;
+	transition-duration: 2s, 3s;
+}
+
+.tr2:hover {
+	width: 200px;
+	height: 200px;
+	background-color: #ff6e5f;
+	transform: rotate(1800deg);
+}
+
+#ex {
+	position: relative;
+	width: 300px;
+	height: 150px;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+	border-radius: 30px;
+	padding: 20px;
+}
+
+#ex:hover .box {
+	transform: rotate(720deg);
+	margin-left: 420px;
+}
+
+.box {
+	font-size: 12px;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+	background-color: #eee;
+}
+
+.box p {
+	text-align: center;
+	padding-top: 4px;
+}
+
+#no-delay {
+	transition-duration: 6s;
+	border: 1px solid #ff6a00;
+}
+
+#delay {
+	transition-duration: 3s;
+	transition-delay: 1s;
+	border: 1px solid #006aff;
+}
+
+.tr3{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+	background-color: #555;
+	transition:2s ease-in;
+}
+.tr3:hover {
+	width: 100px;
+	height: 100px;
+	background-color: #111;
+	transform: rotate(1800deg);
+	
+}
+.tr4{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: #555;
+	transition:2s ease-in;
+}
+.tr4:hover {
+	background-color: #fff;
+	transform: scale(4) perspective(40px) rotateY(180deg);
+	
+}
+.tr5{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: green;
+	transition:3s;
+}
+.tr5:hover {
+	background-color: yellow;
+	
+}
+
+
+

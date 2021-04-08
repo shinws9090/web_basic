@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+	background-color: #fff;
+}
+
+form fieldset {
+	margin-bottom: 25px;
+}
+
+form legend {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+input:disabled {
+	background: red;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+
+input:checked+span{
+	color: red;
+}

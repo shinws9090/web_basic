@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+	font-family: "맑은 고딕","고딕","굴림";
+	text-align: center;
+}
+div{
+	width:600px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+
+.multi{
+	column-count: 3;
+	column-width: 120px;
+	column-gap: 100px;
+	/* column-rule: 2px dotted #ccc; */
+	column-rule-width: 2px;
+	column-rule-style: dotted;
+	column-rule-color: #ccc;
+}
+.multi h4{
+	break-before:column;
+}
+.no-col{
+	background: #ccc;
+	width:500px;
+	column-span: all;
+}

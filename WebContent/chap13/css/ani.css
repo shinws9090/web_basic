@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+div {
+	width: 100px;
+	height: 100px;
+}
+
+.ani1 {
+	background-color: blue;
+	animation-name: change-bg;
+	animation-duration: 3s;
+}
+
+@keyframes change-bg {
+	from { 
+	border: 1px solid black;
+}
+
+to {
+	border: 1px solid blue;
+	border-radius: 50%;
+}
+}
+
+
+
+
+.ani2 {
+	background-color: #8000ff;
+	animation-name: shape;
+	animation-duration: 3s;
+}
+
+@keyframes shape {
+	from { 
+	border: 1px solid black;
+}
+
+to {
+	border: 1px solid blue;
+	border-radius: 50%;
+}
+}
+
+
+
+
+.ani3 {
+	background-color: #008080;
+	animation-name: rotate;
+	animation-duration: 3s;
+}
+
+@keyframes rotate {
+	from { 
+	border: 1px solid black;
+	transform:rotate(0deg)
+}
+
+to {
+	transform:rotate(45deg)
+}
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+ul {
+	list-style: square;
+}
+
+li a {
+	line-height: 30px;
+	font-size: 14px;
+	color: blue;
+	text-decoration: none;
+}
+
+a[href $="hwp"]{
+	background: url(../images/hwp_icon.gif) no-repeat right center;
+	padding: 5px 25px;
+}
+a[href $="xls"]{
+	background: url(../images/excel_icon.gif) no-repeat right center;
+	padding: 5px 25px;
+}

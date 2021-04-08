@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#container ul{
+	border: 1px solid #ccc;
+}
+#container>ul{
+	border: 5px dotted #ccc;
+}
+p+ul{
+	color: red;
+}
+header~p{
+	color: blue;
+}

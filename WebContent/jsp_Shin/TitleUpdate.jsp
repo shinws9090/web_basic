@@ -26,5 +26,8 @@
 		</fieldset>
 
 	</form>
+		<%
+		request.getRequestDispatcher("TitleServlet").include(request, response);
+	%>
 </body>
 </html>

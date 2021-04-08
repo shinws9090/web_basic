@@ -20,10 +20,10 @@
 	<error-code>404</error-code>
 	<location>/jsp_09/errorPage/404.jsp</location>
 	</error-page>
-	<error-page>
+	<!-- <error-page>
 		<exception-type>java.lang.NullPointerException</exception-type>
 	<location>/jsp_09/errorPage/null.jsp</location>
-	</error-page>
+	</error-page> -->
 	
 	<servlet>
 		<servlet-name>MemRegServlet</servlet-name>
